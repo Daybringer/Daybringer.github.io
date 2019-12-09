@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>SOS Dotace</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Literata&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <!--JS-->
+    <script>
+      function showContent() {
+        var x = document.getElementById("schovat");
+        x.style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.png" height="60rem"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="btn btn-primary btn-lg"
+                role="button"
+                href="buttons.html"
+                >Získej dotaci</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#HOW">Jak to funguje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#CONTACTS">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER-->
+    <div class="col-12 text-center">
+      <h1 style="font-style: bold;text-transform: uppercase;">Technologie</h1>
+    </div>
+
+    <!--FORM-->
+    <form class="border border-light p-5">
+      <p class="h4 mb-4 text-center">Osobní údaje</p>
+
+      <label for="passwdInput">Jméno</label>
+      <input
+        type="text"
+        id="passwdInput"
+        class="form-control mb-4"
+        placeholder="Honza"
+      />
+
+      <label for="textInput">Příjmení</label>
+      <input
+        type="text"
+        id="textInput"
+        class="form-control mb-4"
+        placeholder="Novák"
+      />
+      <p class="h4 text-center">Trvalé bydliště</p>
+      <label for="textInput">Město</label>
+      <input
+        type="text"
+        id="textInput"
+        class="form-control mb-4"
+        placeholder="Praha 1"
+      />
+
+      <label for="textInput">PSČ</label>
+      <input
+        type="text"
+        id="textInput"
+        class="form-control mb-4"
+        placeholder="160 00"
+      />
+
+      <label for="textInput">Ulice a č.p.</label>
+      <input
+        type="text"
+        id="textInput"
+        class="form-control mb-4"
+        placeholder="Pařížská 31"
+      />
+      <p class="h4 text-center">Typ dotace</p>
+      <label for="select">Žádám za:</label>
+      <select class="browser-default custom-select mb-4" id="select">
+        <option value="1">Soukromou osobu</option>
+        <option value="2">Právnickou osobu</option>
+      </select>
+
+      <label for="select">Odhad rozsahu dotace:</label>
+      <select class="browser-default custom-select mb-4" id="select">
+        <option value="1">do 10 000 Kč</option>
+        <option value="2">od 10 000 Kč do 50 000 Kč</option>
+        <option value="3">od 50 000 Kč do 200 000 Kč</option>
+        <option value="3">od 200 000 Kč do 1 000 000 Kč</option>
+      </select>
+
+      <label for="textarea">Poznámky</label>
+      <textarea
+        id="textarea"
+        class="form-control mb-4"
+        placeholder="..."
+      ></textarea>
+
+      <button class="btn btn-info btn-block my-4" type="submit">
+        Podat žádost
+      </button>
+    </form>
+    <!-- Footer -->
+    <footer
+      class="page-footer font-small stylish-color-dark pt-4"
+      id="CONTACTS"
+    >
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+            <!-- Content -->
+            <img
+              src="img/logo_white.png"
+              id="footer_img"
+              class="img-fluid"
+              alt="SOS-dotace"
+            />
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5>Kocourkov 666 66</h5>
+            <h5>U Investora 321</h5>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5>+420 123 123 123</h5>
+            <h5>
+              <a href="mailto:vanata.michal@gmail.com">info@sos-dotace.eu</a>
+            </h5>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+        </div>
+        <!-- Grid row -->
+      </div>
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f fa-3x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter fa-3x"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+      <hr class="clearfix w-100 d-md-none" />
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a href="#"> Michal Vaňata</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
